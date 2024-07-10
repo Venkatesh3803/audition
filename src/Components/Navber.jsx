@@ -17,16 +17,16 @@ const Navber = () => {
 
     return (
         <div>
-            <div className="flex w-full bg-white items-center justify-around py-5 fixed left-0 top-0">
-                <div className='w-16 h-16 rounded-full bg-green-500'></div>
-                <div className="">
-                    <div className="flex items-center gap-5 text-blue-500">
-                        <RiDashboardHorizontalFill size={60} color='blue' />
-                        <h1 className='text-3xl font-bold'>Social Audition</h1>
+            <div className="flex w-full bg-white items-center justify-around py-5 sticky top-0 left-0">
+                <div className='md:w-20 md:h-20 h-12 w-12  rounded-full bg-green-500'></div>
+                <div className="flex flex-col items-center">
+                    <div className="flex items-center md:gap-5 gap-2 text-blue-500">
+                        <RiDashboardHorizontalFill className='md:w-20 md:h-20 h-8 w-8 ' color='blue' />
+                        <h1 className=' md:text-3xl font-bold'>Social Audition</h1>
                     </div>
-                    <h2 className='text-6xl'>{time.toLocaleTimeString()}</h2>
+                    <h2 className='md:text-6xl'>{time.toLocaleTimeString()}</h2>
                 </div>
-                <div className="flex items-center justify-center w-20 h-20 rounded-full border border-yellow-500">
+                <div className="flex items-center justify-center md:w-20 md:h-20 h-12 w-12  rounded-full border border-yellow-500">
                 <HiBadgeCheck size={60} color='green'/>
                 </div>
             </div>

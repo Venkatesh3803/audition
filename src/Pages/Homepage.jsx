@@ -5,7 +5,7 @@ import BottomMenu from '../Components/BottomMenu'
 
 const Homepage = () => {
     return (
-        <div className="w-full h-screen overflow-hidden overflow-y-scroll">
+        <div className="relative">
             <Navber />
             <Hero />
             <BottomMenu />
